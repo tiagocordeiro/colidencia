@@ -2,7 +2,7 @@
 """
 Created on Tue Nov  3 14:06:00 2017
 
-@author: Gokhan Atil
+@author: Tiago
 """
 
 import xml.etree.cElementTree as et

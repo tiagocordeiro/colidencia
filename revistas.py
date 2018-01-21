@@ -2,7 +2,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
 
-def revista():
+def ultimaRevista():
     """
     Retorna o link para última Revista da Propriedade Industrial
     SEÇÃO V MARCAS
@@ -22,5 +22,5 @@ def revista():
 
 
 if __name__ == '__main__':
-    ultimarevista = revista()
+    ultimarevista = ultimaRevista()
     print(ultimarevista)
