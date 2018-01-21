@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Nov  3 14:06:00 2017
-
-@author: Tiago
-"""
-
 import xml.etree.cElementTree as et
 import pandas as pd
 
@@ -30,5 +23,5 @@ def main():
 
     print(df_xml)
 
-
-main()
+if __name__ == '__main__':
+    main()
