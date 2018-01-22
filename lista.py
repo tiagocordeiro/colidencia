@@ -1,7 +1,6 @@
 import xml.etree.ElementTree as ET
 import os
 
-
 downloads_folder = "downloads/xml"
 arquivos = []
 
@@ -40,7 +39,8 @@ def processos(arquivo=ultimo_arquivo):
             print('\u255F\u2500\u2500 Protocolo:  ', protocolo.attrib)
 
         for requerente in processo.iter('requerente'):
-            print('\u255F\u2500\u2500 Requerente: ', requerente.attrib['nome-razao-social'])
+            print('\u255F\u2500\u2500 Requerente: ',
+                  requerente.attrib['nome-razao-social'])
 
         for procurador in processo.iter('procurador'):
             print('\u255F\u2500\u2500 Procurador: ', procurador.text)
@@ -73,11 +73,11 @@ def buscaProcurador(empresa=empresa_registro, arquivo=ultimo_arquivo):
         for procurador in processo.iter('procurador'):
             print('Procurador: ', procurador.text)
             if procurador.text == empresa:
-
                 processos_casa.append(processo.attrib['numero'])
 
     print(processos_casa)
     return processos_casa
+
 
 if __name__ == '__main__':
     protocolos = processos()

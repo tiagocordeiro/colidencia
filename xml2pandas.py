@@ -19,9 +19,12 @@ def main():
         procurador = node.find('procurador')
 
         df_xml = df_xml.append(
-            pd.Series([processo, getvalueofnode(requerente), getvalueofnode(procurador)], index=dfcols), ignore_index=True)
+            pd.Series([processo, getvalueofnode(requerente),
+                       getvalueofnode(procurador)], index=dfcols),
+            ignore_index=True)
 
     print(df_xml)
+
 
 if __name__ == '__main__':
     main()

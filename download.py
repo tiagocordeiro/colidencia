@@ -26,9 +26,10 @@ def baixaRevista(zipurl):
     tempzip.close()
 
     zf = ZipFile("downloads/tmp/tempfile.zip")
-    zf.extractall(path = 'downloads/xml')
+    zf.extractall(path='downloads/xml')
     zf.close()
     return
+
 
 if __name__ == '__main__':
     zipurl = ultimaRevista()
