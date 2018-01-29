@@ -68,10 +68,10 @@ def buscaProcurador(empresa=empresa_registro, arquivo=ultimo_arquivo):
     root = tree.getroot()
 
     for processo in root.iter('processo'):
-        print('Processo: ', processo.attrib['numero'])
+        #print('Processo: ', processo.attrib['numero'])
 
         for procurador in processo.iter('procurador'):
-            print('Procurador: ', procurador.text)
+            #print('Procurador: ', procurador.text)
             if procurador.text == empresa:
                 processos_casa.append(processo.attrib['numero'])
 
