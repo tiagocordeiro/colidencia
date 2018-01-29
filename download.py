@@ -18,6 +18,7 @@ def baixaRevista(zipurl):
     note that extractall will automatically create the path
     close the ZipFile instance
     """
+    #TODO Verificar se a revista já foi baixada anteriormente
 
     zipresp = urlopen(zipurl)
 

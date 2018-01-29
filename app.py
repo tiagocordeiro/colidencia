@@ -5,13 +5,20 @@ from lista import processos, buscaProcurador
 
 
 # Verifica o link para ultima revista
-ultimarevista = ultimaRevista()
+# ultimarevista = ultimaRevista()
 
 # baixa o arquivo zip da ultima revista e descompacta na pasta xml
-baixaRevista(ultimarevista)
+# baixaRevista(ultimarevista)
 
 # Imprime os processos da ultima revista
-processos()
+# processos("downloads/xml/2454.xml")
+# print("Fim da lista de processos")
+
 
 # Retorna processos de um procurador específico
-buscaProcurador("Marcelle de Oliveira Campos")
+buscaProcurador("Marcelle de Oliveira Campos", "downloads/xml/2454.xml")
+print("Fim da lista da Procuradoria MP revista 2454")
+
+
+# buscaProcurador("Marcelle de Oliveira Campos", "downloads/xml/2455.xml")
+# print("Fim da lista da Procuradoria MP revista 2455")
