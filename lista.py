@@ -81,4 +81,4 @@ def buscaProcurador(empresa=empresa_registro, arquivo=ultimo_arquivo):
 
 if __name__ == '__main__':
     protocolos = processos()
-    # procuradores = buscaProcurador('A Provincia Marcas e Patentes Ltda.')
+    # procuradores = buscaProcurador('Marcelle de Oliveira Campos')
